@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>Covid 19 Tracker | INDIA</title>
+</head>
+<body>
+    <header>
+        <h1>Covid 19 Tracker | <span id="country">INDIA</span> </h1>
+    </header>
+    <div class="data-class">
+        <div id='map'></div>
+        <section>
+            <h1>Total Confirmed : <br>
+                <span id="confirmed"></span>
+            </h1>
+            <h1>Total Deaths : <br>
+                <span id="death"></span>
+            </h1>
+            <h1>Total Recovered : <br>
+                <span id="recovered"></span>
+            </h1>
+            <div class="links">
+                <p>Covid is not a Joke , get yourself vaccinated some , here is link : 
+                    <a href="https://selfregistration.cowin.gov.in/" target="_blank">Book slot</a>
+                </p>
+
+                <p>Covid Guidelines : <a href="https://ncdc.gov.in/index1.php?lang=1&level=1&sublinkid=703&lid=550" target="_blank">Here</a></p>
+            </div>
+        </section>
+    </div>
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGllcjNndXkiLCJhIjoiY2tteGV4MTRoMGJqMjJvbmk1ZjZybnhoMSJ9.SAMpgn6ItBOFZWUw6CwHMw';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom : 3.3,
+    center : [78,22]
+    });
+</script>
+
+<script src="index.js"></script>
+</html>

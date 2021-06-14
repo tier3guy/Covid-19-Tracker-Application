@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Cascadia Code' , sans-serif;
+}
+
+#map{
+    height: 82vh;
+    width: 65vw;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body{
+    padding: 0.5rem 15px;
+    background-color: #d3d3d3;
+}
+
+header , section{
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #727272;
+}
+
+.data-class{
+    margin-top: 20px;
+    display: flex;
+}
+
+section{
+    width: 31.3vw;
+    margin-left: 20px;
+}
+
+#country{
+    color : rgb(175, 11, 11);
+}
+
+#confirmed{
+    color: rgb(40, 32, 139);
+}
+#death{
+    color: rgb(121, 14, 14);
+}
+#recovered{
+    color: rgb(54, 236, 17);
+}
+
+section h1{
+    margin: 20px 0;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 8px 10px;
+}
+
+.links {
+    font-size: 1.5rem;
+}
+
+.links p{
+    margin-top: 25px;
+}
